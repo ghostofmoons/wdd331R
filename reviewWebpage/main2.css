@@ -1,0 +1,109 @@
+/*Add Lora font family url*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/*CSS for small screen mobile----------------------------*/
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a, a:visited {
+    color: #644;
+    text-decoration: none;
+}
+a:active {
+    color: #DEB887;
+}
+a:hover {
+    color: #00ddff;
+}
+li {
+    list-style: none;
+}
+
+/*header area-------*/
+    header h1 {
+        font-family: 'Lora', serif;
+        font-size: 4rem;
+        text-align: center;
+        
+    }
+    header h1 a {
+        color: #333;
+        text-decoration: none;
+    }
+    header h1 a:hover{
+        color: #333;
+    }
+    nav {
+        border-top: 1px solid #d0d0d0;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    nav ul {        
+        text-align: center;       
+        padding: 0;
+        font-size: 1.2rem;
+        
+    }
+    nav ul li {
+        padding: .5rem 0 .5rem 0;
+       
+    }
+    nav ul li a {
+        text-transform: uppercase;
+        font-family: 'Lora', serif;       
+    }
+    
+/*Main area----------------*/
+    .post-date {
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 3rem 0 1rem 0;
+        border-bottom: 1px solid #d0d0d0;
+        font-family: 'Lora', serif;
+    }
+   
+    p {
+        font-weight: bold;
+        margin-top: 0;
+    }
+    .post-content {
+        border-bottom: 1px solid #d0d0d0;
+        padding: 0rem 0 1rem 1rem;
+    }
+    .post-content figure {
+        margin-bottom: .5rem
+    }
+    .post-content h2 {
+        font-family: 'Lora', serif;
+    }
+
+    /*css for large screen desktop--------------------*/
+    @media only screen and (min-width: 768px){
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin: 0;
+        }
+        nav ul li {
+            padding: .5rem 1.5rem .5rem 0;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 3rem;
+        }
+        .post-date {
+            border-bottom: none;
+            padding-top: 1.7rem;
+        }
+        .post-content {
+            padding-top: .4rem;
+            border-left: 1px solid #d0d0d0;           
+        }
+        main {
+            margin-top: 1.2rem;
+        }
+    }
