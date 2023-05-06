@@ -3,7 +3,7 @@
  $head-font: 'Lora', serif;
  $body-font: Helvetica, Arial, sans-serif;
  $main-font-color: red;
- $screen-large: 768 px;
+ $screen-large: 768px;
 
 @mixin screensize($size){
 @if $size == large {
